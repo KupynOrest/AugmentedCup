@@ -59,6 +59,7 @@
 		2B5840BD1E338ADB00528E24 /* LabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5840BC1E338ADB00528E24 /* LabelView.m */; };
 		2B5840BF1E338AF300528E24 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840BE1E338AF200528E24 /* LabelView.xib */; };
 		2B5840C21E339A6E00528E24 /* WelcomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5840C11E339A6E00528E24 /* WelcomeTableViewController.m */; };
+		2B5840C41E33A4E300528E24 /* lunarrock_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840C31E33A4E300528E24 /* lunarrock_s.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,7 @@
 		2B5840BE1E338AF200528E24 /* LabelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
 		2B5840C01E339A6E00528E24 /* WelcomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeTableViewController.h; sourceTree = "<group>"; };
 		2B5840C11E339A6E00528E24 /* WelcomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeTableViewController.m; sourceTree = "<group>"; };
+		2B5840C31E33A4E300528E24 /* lunarrock_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lunarrock_s.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 		057E5D3E1E326C02008FCC25 /* CylinderTargets */ = {
 			isa = PBXGroup;
 			children = (
+				2B5840C31E33A4E300528E24 /* lunarrock_s.png */,
 				0594B4181E3370F9008EA18A /* water.jpg */,
 				0594B4111E336905008EA18A /* water.dat */,
 				0594B4121E336905008EA18A /* water.xml */,
@@ -352,6 +355,7 @@
 				057E5D561E326C02008FCC25 /* TextureTransparent.png in Resources */,
 				057E5D4B1E326C02008FCC25 /* cola.dat in Resources */,
 				057E5D4C1E326C02008FCC25 /* cola.xml in Resources */,
+				2B5840C41E33A4E300528E24 /* lunarrock_s.png in Resources */,
 				057E5D011E326A73008FCC25 /* Main.storyboard in Resources */,
 				2B5840AF1E337B1B00528E24 /* Background.vertsh in Resources */,
 				0594B4141E336905008EA18A /* water.xml in Resources */,

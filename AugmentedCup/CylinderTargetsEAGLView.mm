@@ -54,7 +54,7 @@ namespace {
     const char* textureFilenames[kNumAugmentationTextures] = {
         "TextureTransparent.png",
         "texture.png",
-        "TextureSoccerBall.png"
+        "lunarrock_s.png"
     };
     
     enum tagAugmentationTextureIndex {
