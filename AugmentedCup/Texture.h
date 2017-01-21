@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class TextureProvider;
 
 @interface Texture : NSObject {
 }
@@ -22,5 +23,6 @@
 
 // --- Public methods ---
 - (id)initWithImageFile:(NSString*)filename;
+- (id)initWithTextureProvider:(TextureProvider*)textureProvider;
 
 @end

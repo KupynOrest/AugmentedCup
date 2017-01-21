@@ -25,6 +25,8 @@ countries.
 #import "SampleApplicationShaderUtils.h"
 #import "SoccerballSphere.h"
 
+#import "TextureProvider.h"
+
 
 //******************************************************************************
 // *** OpenGL ES thread safety ***
@@ -126,7 +128,12 @@ namespace {
         
         // Load the augmentation textures
         for (int i = 0; i < kNumAugmentationTextures; ++i) {
-            augmentationTexture[i] = [[Texture alloc] initWithImageFile:[NSString stringWithCString:textureFilenames[i] encoding:NSASCIIStringEncoding]];
+            TextureProvider *provider = [TextureProvider new];
+            [provider setString:@"Water"];
+            
+            augmentationTexture[i] = [[Texture alloc] initWithTextureProvider:provider];
+            
+//            augmentationTexture[i] = [[Texture alloc] initWithImageFile:[NSString stringWithCString:textureFilenames[i] encoding:NSASCIIStringEncoding]];
         }
 
         // Create the OpenGL ES context

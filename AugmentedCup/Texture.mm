@@ -41,8 +41,8 @@
     self = [super init];
     
     if (nil != self) {
-        if (NO == [self loadImage:filename]) {
-            NSLog(@"Failed to load texture image from file %@", filename);
+        if (NO == [self useImage:[textureProvider image]]) {
+            NSLog(@"Failed to load texture from texture provider.");
             self = nil;
         }
     }
@@ -92,35 +92,15 @@
 
 - (BOOL)loadImage:(NSString*)filename
 {
-    BOOL ret = NO;
-    
     // Build the full path of the image file
     NSString* fullPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:filename];
     
     // Create a UIImage with the contents of the file
     UIImage* uiImage = [UIImage imageWithContentsOfFile:fullPath];
     
-    if (uiImage) {
-        // Get the inner CGImage from the UIImage wrapper
-        CGImageRef cgImage = uiImage.CGImage;
-        
-        // Get the image size
-        _width = (int)CGImageGetWidth(cgImage);
-        _height = (int)CGImageGetHeight(cgImage);
-        
-        // Record the number of channels
-        _channels = (int)CGImageGetBitsPerPixel(cgImage)/CGImageGetBitsPerComponent(cgImage);
-        
-        // Generate a CFData object from the CGImage object (a CFData object represents an area of memory)
-        CFDataRef imageData = CGDataProviderCopyData(CGImageGetDataProvider(cgImage));
-        
-        // Copy the image data for use by Open GL
-        ret = [self copyImageDataForOpenGL: imageData];
-        
-        CFRelease(imageData);
-    }
     
-    return ret;
+    
+    return [self useImage:uiImage];
 }
 
 

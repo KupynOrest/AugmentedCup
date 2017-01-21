@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface TextureProvider : NSObject
 
+- (void)setString:(NSString *)string;
+- (UIImage *)image;
 
 
 @end
