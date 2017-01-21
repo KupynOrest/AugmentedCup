@@ -11,7 +11,7 @@ countries.
 
 
 // number of sides used to build the cylinder
-#define CYLINDER_NB_SIDES 64
+#define CYLINDER_NB_SIDES 128
 
 // 2 series of CYLINDER_NB_SIDES vertex, plus
 // one for the bottom circle, one for the top circle

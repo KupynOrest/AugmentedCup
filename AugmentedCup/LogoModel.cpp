@@ -102,9 +102,9 @@ LogoModel::prepareData() {
 	    cylinderIndices[(i * 12) + 5] = i;
 
 	    // bottom circle
-	    cylinderIndices[(i * 12) + 6] = i1 ;
-	    cylinderIndices[(i * 12) + 7] = i ;
-	    cylinderIndices[(i * 12) + 8] = ix_vertex_center_bottom ;
+	    cylinderIndices[(i * 12) + 6] = 0 ;
+	    cylinderIndices[(i * 12) + 7] = 0 ;
+	    cylinderIndices[(i * 12) + 8] = 0 ;
 
 	    // top circle
 	    cylinderIndices[(i * 12) + 9] = (i + CYLINDER_NB_SIDES) ;
