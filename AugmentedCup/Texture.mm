@@ -7,6 +7,7 @@
 
 #import "Texture.h"
 #import <UIKit/UIKit.h>
+#import "TextureProvider.h"
 
 
 // Private method declarations
@@ -35,6 +36,21 @@
     return self;
 }
 
+- (id)initWithTextureProvider:(TextureProvider*)textureProvider
+{
+    self = [super init];
+    
+    if (nil != self) {
+        if (NO == [self loadImage:filename]) {
+            NSLog(@"Failed to load texture image from file %@", filename);
+            self = nil;
+        }
+    }
+    
+    return self;
+}
+
+
 
 - (void)dealloc
 {
@@ -46,6 +62,33 @@
 
 //------------------------------------------------------------------------------
 #pragma mark - Private methods
+
+- (BOOL)useImage:(UIImage*)uiImage
+{
+    BOOL ret = NO;
+    
+    if (uiImage) {
+        // Get the inner CGImage from the UIImage wrapper
+        CGImageRef cgImage = uiImage.CGImage;
+        
+        // Get the image size
+        _width = (int)CGImageGetWidth(cgImage);
+        _height = (int)CGImageGetHeight(cgImage);
+        
+        // Record the number of channels
+        _channels = (int)CGImageGetBitsPerPixel(cgImage)/CGImageGetBitsPerComponent(cgImage);
+        
+        // Generate a CFData object from the CGImage object (a CFData object represents an area of memory)
+        CFDataRef imageData = CGDataProviderCopyData(CGImageGetDataProvider(cgImage));
+        
+        // Copy the image data for use by Open GL
+        ret = [self copyImageDataForOpenGL: imageData];
+        
+        CFRelease(imageData);
+    }
+    
+    return ret;
+}
 
 - (BOOL)loadImage:(NSString*)filename
 {

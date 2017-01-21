@@ -54,6 +54,7 @@
 		2B5840B21E337B1B00528E24 /* Simple.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840AB1E337B1B00528E24 /* Simple.fragsh */; };
 		2B5840B31E337B1B00528E24 /* Simple.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840AC1E337B1B00528E24 /* Simple.vertsh */; };
 		2B5840B41E337B1B00528E24 /* SimpleWithColor.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840AD1E337B1B00528E24 /* SimpleWithColor.fragsh */; };
+		2B5840B71E337DEF00528E24 /* TextureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5840B61E337DEF00528E24 /* TextureProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,8 @@
 		2B5840AB1E337B1B00528E24 /* Simple.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.fragsh; sourceTree = "<group>"; };
 		2B5840AC1E337B1B00528E24 /* Simple.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.vertsh; sourceTree = "<group>"; };
 		2B5840AD1E337B1B00528E24 /* SimpleWithColor.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleWithColor.fragsh; sourceTree = "<group>"; };
+		2B5840B51E337DEF00528E24 /* TextureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureProvider.h; sourceTree = "<group>"; };
+		2B5840B61E337DEF00528E24 /* TextureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,8 @@
 				057E5D3D1E326C02008FCC25 /* Resources */,
 				057E5CF91E326A73008FCC25 /* AppDelegate.h */,
 				057E5CFA1E326A73008FCC25 /* AppDelegate.m */,
+				2B5840B51E337DEF00528E24 /* TextureProvider.h */,
+				2B5840B61E337DEF00528E24 /* TextureProvider.m */,
 				057E5CFF1E326A73008FCC25 /* Main.storyboard */,
 				057E5D021E326A73008FCC25 /* Assets.xcassets */,
 				057E5D041E326A73008FCC25 /* LaunchScreen.storyboard */,
@@ -359,6 +364,7 @@
 				0594B3FD1E3367EA008EA18A /* SampleApplicationUtils.cpp in Sources */,
 				057E5CFB1E326A73008FCC25 /* AppDelegate.m in Sources */,
 				0594B3FB1E3367EA008EA18A /* SampleApplicationSession.mm in Sources */,
+				2B5840B71E337DEF00528E24 /* TextureProvider.m in Sources */,
 				0594B4061E3367EA008EA18A /* Texture.mm in Sources */,
 				0594B40E1E3367FF008EA18A /* CylinderModel.cpp in Sources */,
 				057E5CF81E326A73008FCC25 /* main.m in Sources */,
