@@ -10,10 +10,9 @@ countries.
 #import <UIKit/UIKit.h>
 #import "CylinderTargetsEAGLView.h"
 #import "SampleApplicationSession.h"
-#import "SampleAppMenuViewController.h"
 #import <Vuforia/DataSet.h>
 
-@interface CylinderTargetsViewController : UIViewController <SampleApplicationControl, SampleAppMenuDelegate> {
+@interface CylinderTargetsViewController : UIViewController <SampleApplicationControl> {
     Vuforia::DataSet*  dataSet;
     
     // menu options

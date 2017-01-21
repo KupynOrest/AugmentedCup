@@ -16,9 +16,6 @@ countries.
 #import <Vuforia/DataSet.h>
 #import <Vuforia/CameraDevice.h>
 
-#import "UnwindMenuSegue.h"
-#import "PresentMenuSegue.h"
-#import "SampleAppMenuViewController.h"
 
 @interface CylinderTargetsViewController ()
 
@@ -465,24 +462,6 @@ countries.
 - (void) menuDidExit
 {
     self.showingMenu = NO;
-}
-
-
-#pragma mark - Navigation
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue isKindOfClass:[PresentMenuSegue class]]) {
-        UIViewController *dest = [segue destinationViewController];
-        if ([dest isKindOfClass:[SampleAppMenuViewController class]]) {
-            self.showingMenu = YES;
-            
-            SampleAppMenuViewController *menuVC = (SampleAppMenuViewController *)dest;
-            menuVC.menuDelegate = self;
-            menuVC.sampleAppFeatureName = @"Cylinder Targets";
-            menuVC.dismissItemName = @"Vuforia Samples";
-            menuVC.backSegueId = @"BackToCylinderTargets";
-        }
-    }
 }
 
 @end
