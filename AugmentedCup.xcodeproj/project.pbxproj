@@ -39,13 +39,6 @@
 		0594B3FC1E3367EA008EA18A /* SampleApplicationShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0594B3E81E3367EA008EA18A /* SampleApplicationShaderUtils.m */; };
 		0594B3FD1E3367EA008EA18A /* SampleApplicationUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0594B3E91E3367EA008EA18A /* SampleApplicationUtils.cpp */; };
 		0594B3FE1E3367EA008EA18A /* SampleAppRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0594B3EC1E3367EA008EA18A /* SampleAppRenderer.mm */; };
-		0594B3FF1E3367EA008EA18A /* Background.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 0594B3EF1E3367EA008EA18A /* Background.fragsh */; };
-		0594B4001E3367EA008EA18A /* Background.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 0594B3F01E3367EA008EA18A /* Background.vertsh */; };
-		0594B4011E3367EA008EA18A /* Line.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 0594B3F11E3367EA008EA18A /* Line.fragsh */; };
-		0594B4021E3367EA008EA18A /* Line.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 0594B3F21E3367EA008EA18A /* Line.vertsh */; };
-		0594B4031E3367EA008EA18A /* Simple.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 0594B3F31E3367EA008EA18A /* Simple.fragsh */; };
-		0594B4041E3367EA008EA18A /* Simple.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 0594B3F41E3367EA008EA18A /* Simple.vertsh */; };
-		0594B4051E3367EA008EA18A /* SimpleWithColor.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 0594B3F51E3367EA008EA18A /* SimpleWithColor.fragsh */; };
 		0594B4061E3367EA008EA18A /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0594B3F91E3367EA008EA18A /* Texture.mm */; };
 		0594B40E1E3367FF008EA18A /* CylinderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0594B4081E3367FF008EA18A /* CylinderModel.cpp */; };
 		0594B40F1E3367FF008EA18A /* CylinderTargetsEAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0594B40B1E3367FF008EA18A /* CylinderTargetsEAGLView.mm */; };
@@ -54,6 +47,13 @@
 		0594B4141E336905008EA18A /* water.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0594B4121E336905008EA18A /* water.xml */; };
 		0594B4171E336A32008EA18A /* LogoModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0594B4151E336A32008EA18A /* LogoModel.cpp */; };
 		0594B4191E3370F9008EA18A /* water.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0594B4181E3370F9008EA18A /* water.jpg */; };
+		2B5840AE1E337B1B00528E24 /* Background.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840A71E337B1A00528E24 /* Background.fragsh */; };
+		2B5840AF1E337B1B00528E24 /* Background.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840A81E337B1A00528E24 /* Background.vertsh */; };
+		2B5840B01E337B1B00528E24 /* Line.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840A91E337B1B00528E24 /* Line.fragsh */; };
+		2B5840B11E337B1B00528E24 /* Line.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840AA1E337B1B00528E24 /* Line.vertsh */; };
+		2B5840B21E337B1B00528E24 /* Simple.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840AB1E337B1B00528E24 /* Simple.fragsh */; };
+		2B5840B31E337B1B00528E24 /* Simple.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840AC1E337B1B00528E24 /* Simple.vertsh */; };
+		2B5840B41E337B1B00528E24 /* SimpleWithColor.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840AD1E337B1B00528E24 /* SimpleWithColor.fragsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,13 +98,6 @@
 		0594B3EB1E3367EA008EA18A /* SampleAppRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleAppRenderer.h; sourceTree = "<group>"; };
 		0594B3EC1E3367EA008EA18A /* SampleAppRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SampleAppRenderer.mm; sourceTree = "<group>"; };
 		0594B3ED1E3367EA008EA18A /* SampleGLResourceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleGLResourceHandler.h; sourceTree = "<group>"; };
-		0594B3EF1E3367EA008EA18A /* Background.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Background.fragsh; sourceTree = "<group>"; };
-		0594B3F01E3367EA008EA18A /* Background.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Background.vertsh; sourceTree = "<group>"; };
-		0594B3F11E3367EA008EA18A /* Line.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Line.fragsh; sourceTree = "<group>"; };
-		0594B3F21E3367EA008EA18A /* Line.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Line.vertsh; sourceTree = "<group>"; };
-		0594B3F31E3367EA008EA18A /* Simple.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.fragsh; sourceTree = "<group>"; };
-		0594B3F41E3367EA008EA18A /* Simple.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.vertsh; sourceTree = "<group>"; };
-		0594B3F51E3367EA008EA18A /* SimpleWithColor.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleWithColor.fragsh; sourceTree = "<group>"; };
 		0594B3F61E3367EA008EA18A /* SoccerballSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoccerballSphere.h; sourceTree = "<group>"; };
 		0594B3F71E3367EA008EA18A /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
 		0594B3F81E3367EA008EA18A /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
@@ -121,6 +114,13 @@
 		0594B4151E336A32008EA18A /* LogoModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogoModel.cpp; sourceTree = "<group>"; };
 		0594B4161E336A32008EA18A /* LogoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoModel.h; sourceTree = "<group>"; };
 		0594B4181E3370F9008EA18A /* water.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = water.jpg; sourceTree = "<group>"; };
+		2B5840A71E337B1A00528E24 /* Background.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Background.fragsh; sourceTree = "<group>"; };
+		2B5840A81E337B1A00528E24 /* Background.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Background.vertsh; sourceTree = "<group>"; };
+		2B5840A91E337B1B00528E24 /* Line.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Line.fragsh; sourceTree = "<group>"; };
+		2B5840AA1E337B1B00528E24 /* Line.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Line.vertsh; sourceTree = "<group>"; };
+		2B5840AB1E337B1B00528E24 /* Simple.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.fragsh; sourceTree = "<group>"; };
+		2B5840AC1E337B1B00528E24 /* Simple.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.vertsh; sourceTree = "<group>"; };
+		2B5840AD1E337B1B00528E24 /* SimpleWithColor.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleWithColor.fragsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +197,7 @@
 				0594B3EB1E3367EA008EA18A /* SampleAppRenderer.h */,
 				0594B3EC1E3367EA008EA18A /* SampleAppRenderer.mm */,
 				0594B3ED1E3367EA008EA18A /* SampleGLResourceHandler.h */,
-				0594B3EE1E3367EA008EA18A /* shaders */,
+				2B5840A61E337B1A00528E24 /* shaders */,
 				0594B3F61E3367EA008EA18A /* SoccerballSphere.h */,
 				0594B3F71E3367EA008EA18A /* Teapot.h */,
 				0594B3F81E3367EA008EA18A /* Texture.h */,
@@ -250,16 +250,16 @@
 			path = CylinderTargets;
 			sourceTree = "<group>";
 		};
-		0594B3EE1E3367EA008EA18A /* shaders */ = {
+		2B5840A61E337B1A00528E24 /* shaders */ = {
 			isa = PBXGroup;
 			children = (
-				0594B3EF1E3367EA008EA18A /* Background.fragsh */,
-				0594B3F01E3367EA008EA18A /* Background.vertsh */,
-				0594B3F11E3367EA008EA18A /* Line.fragsh */,
-				0594B3F21E3367EA008EA18A /* Line.vertsh */,
-				0594B3F31E3367EA008EA18A /* Simple.fragsh */,
-				0594B3F41E3367EA008EA18A /* Simple.vertsh */,
-				0594B3F51E3367EA008EA18A /* SimpleWithColor.fragsh */,
+				2B5840A71E337B1A00528E24 /* Background.fragsh */,
+				2B5840A81E337B1A00528E24 /* Background.vertsh */,
+				2B5840A91E337B1B00528E24 /* Line.fragsh */,
+				2B5840AA1E337B1B00528E24 /* Line.vertsh */,
+				2B5840AB1E337B1B00528E24 /* Simple.fragsh */,
+				2B5840AC1E337B1B00528E24 /* Simple.vertsh */,
+				2B5840AD1E337B1B00528E24 /* SimpleWithColor.fragsh */,
 			);
 			path = shaders;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 				TargetAttributes = {
 					057E5CF21E326A73008FCC25 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = BD8TJ7XZCW;
+						DevelopmentTeam = AUMEW37ZKN;
 					};
 				};
 			};
@@ -325,24 +325,24 @@
 				057E5D551E326C02008FCC25 /* TextureSoccerBall.png in Resources */,
 				057E5D061E326A73008FCC25 /* LaunchScreen.storyboard in Resources */,
 				057E5D511E326C02008FCC25 /* sodacan.xml in Resources */,
-				0594B4011E3367EA008EA18A /* Line.fragsh in Resources */,
 				057E5D031E326A73008FCC25 /* Assets.xcassets in Resources */,
 				057E5D561E326C02008FCC25 /* TextureTransparent.png in Resources */,
 				057E5D4B1E326C02008FCC25 /* cola.dat in Resources */,
 				057E5D4C1E326C02008FCC25 /* cola.xml in Resources */,
 				057E5D011E326A73008FCC25 /* Main.storyboard in Resources */,
-				0594B4051E3367EA008EA18A /* SimpleWithColor.fragsh in Resources */,
+				2B5840AF1E337B1B00528E24 /* Background.vertsh in Resources */,
 				0594B4141E336905008EA18A /* water.xml in Resources */,
-				0594B3FF1E3367EA008EA18A /* Background.fragsh in Resources */,
-				0594B4031E3367EA008EA18A /* Simple.fragsh in Resources */,
+				2B5840B21E337B1B00528E24 /* Simple.fragsh in Resources */,
+				2B5840B41E337B1B00528E24 /* SimpleWithColor.fragsh in Resources */,
+				2B5840B11E337B1B00528E24 /* Line.vertsh in Resources */,
 				057E5D501E326C02008FCC25 /* sodacan.dat in Resources */,
-				0594B4041E3367EA008EA18A /* Simple.vertsh in Resources */,
-				0594B4021E3367EA008EA18A /* Line.vertsh in Resources */,
 				057E5D521E326C02008FCC25 /* Test.dat in Resources */,
+				2B5840B31E337B1B00528E24 /* Simple.vertsh in Resources */,
 				0594B4191E3370F9008EA18A /* water.jpg in Resources */,
+				2B5840AE1E337B1B00528E24 /* Background.fragsh in Resources */,
+				2B5840B01E337B1B00528E24 /* Line.fragsh in Resources */,
 				0594B4131E336905008EA18A /* water.dat in Resources */,
 				057E5D541E326C02008FCC25 /* texture.png in Resources */,
-				0594B4001E3367EA008EA18A /* Background.vertsh in Resources */,
 				057E5D4F1E326C02008FCC25 /* mario.png in Resources */,
 				057E5D531E326C02008FCC25 /* Test.xml in Resources */,
 			);
@@ -483,6 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AUMEW37ZKN;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/build/include";
 				INFOPLIST_FILE = AugmentedCup/Info.plist;
@@ -492,7 +493,7 @@
 					"$(PROJECT_DIR)/AugmentedCup/build/lib/arm",
 					"$(PROJECT_DIR)/build/lib/arm",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lemberg.AugmentedCup33;
+				PRODUCT_BUNDLE_IDENTIFIER = lemberg.AugmentedCup32;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -505,6 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AUMEW37ZKN;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/build/include";
 				INFOPLIST_FILE = AugmentedCup/Info.plist;
@@ -514,7 +516,7 @@
 					"$(PROJECT_DIR)/AugmentedCup/build/lib/arm",
 					"$(PROJECT_DIR)/build/lib/arm",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lemberg.AugmentedCup33;
+				PRODUCT_BUNDLE_IDENTIFIER = lemberg.AugmentedCup32;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
