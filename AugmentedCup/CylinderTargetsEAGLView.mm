@@ -130,7 +130,8 @@ namespace {
         for (int i = 0; i < kNumAugmentationTextures; ++i) {
             if (i == 1) {
                 TextureProvider *provider = [TextureProvider new];
-                [provider setString:@"Water"];
+                NSString *cupName = [[NSUserDefaults standardUserDefaults] stringForKey:@"CupName"];
+                [provider setString:cupName];
                 
                 augmentationTexture[i] = [[Texture alloc] initWithTextureProvider:provider];
             } else {
