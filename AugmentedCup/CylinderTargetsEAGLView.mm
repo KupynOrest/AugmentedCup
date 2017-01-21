@@ -1,11 +1,11 @@
 /*===============================================================================
-Copyright (c) 2016 PTC Inc. All Rights Reserved.
-
-Copyright (c) 2012-2015 Qualcomm Connected Experiences, Inc. All Rights Reserved.
-
-Vuforia is a trademark of PTC Inc., registered in the United States and other 
-countries.
-===============================================================================*/
+ Copyright (c) 2016 PTC Inc. All Rights Reserved.
+ 
+ Copyright (c) 2012-2015 Qualcomm Connected Experiences, Inc. All Rights Reserved.
+ 
+ Vuforia is a trademark of PTC Inc., registered in the United States and other
+ countries.
+ ===============================================================================*/
 
 #import <QuartzCore/QuartzCore.h>
 #import <OpenGLES/ES2/gl.h>
@@ -49,7 +49,7 @@ countries.
 
 namespace {
     // --- Data private to this unit ---
-
+    
     // Texture filenames
     const char* textureFilenames[kNumAugmentationTextures] = {
         "TextureTransparent.png",
@@ -128,14 +128,16 @@ namespace {
         
         // Load the augmentation textures
         for (int i = 0; i < kNumAugmentationTextures; ++i) {
-            TextureProvider *provider = [TextureProvider new];
-            [provider setString:@"Water"];
-            
-            augmentationTexture[i] = [[Texture alloc] initWithTextureProvider:provider];
-            
-//            augmentationTexture[i] = [[Texture alloc] initWithImageFile:[NSString stringWithCString:textureFilenames[i] encoding:NSASCIIStringEncoding]];
+            if (i == 1) {
+                TextureProvider *provider = [TextureProvider new];
+                [provider setString:@"Water"];
+                
+                augmentationTexture[i] = [[Texture alloc] initWithTextureProvider:provider];
+            } else {
+                augmentationTexture[i] = [[Texture alloc] initWithImageFile:[NSString stringWithCString:textureFilenames[i] encoding:NSASCIIStringEncoding]];
+            }
         }
-
+        
         // Create the OpenGL ES context
         context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
         
@@ -182,7 +184,7 @@ namespace {
     if ([EAGLContext currentContext] == context) {
         [EAGLContext setCurrentContext:nil];
     }
-
+    
     for (int i = 0; i < kNumAugmentationTextures; ++i) {
         augmentationTexture[i] = nil;
     }
@@ -212,7 +214,7 @@ namespace {
 - (void) setOffTargetTrackingMode:(BOOL) enabled {
     offTargetTrackingEnabled = enabled;
 }
-    
+
 - (void) updateRenderingPrimitives
 {
     [sampleAppRenderer updateRenderingPrimitives];
@@ -333,7 +335,7 @@ namespace {
         modelViewMatrix = Vuforia::Tool::convertPose2GLMatrix(result->getPose());
         
         [self animateObject:modelViewMatrix];
-
+        
         // Translate and scale the model, then apply the projection matrix
         SampleApplicationUtils::translatePoseMatrix(1.0f * kCylinderTopDiameter, 0.0f, kBallObjectScale, &modelViewMatrix.data[0]);
         SampleApplicationUtils::scalePoseMatrix(kBallObjectScale, kBallObjectScale, kBallObjectScale, &modelViewMatrix.data[0]);
@@ -366,7 +368,7 @@ namespace {
     glDisable(GL_CULL_FACE);
     
     [self presentFramebuffer];
-
+    
 }
 
 
@@ -381,8 +383,8 @@ namespace {
 - (void)initShaders
 {
     shaderProgramID = [SampleApplicationShaderUtils createProgramWithVertexShaderFileName:@"Simple.vertsh"
-                                                   fragmentShaderFileName:@"Simple.fragsh"];
-
+                                                                   fragmentShaderFileName:@"Simple.fragsh"];
+    
     if (0 < shaderProgramID) {
         vertexHandle = glGetAttribLocation(shaderProgramID, "vertexPosition");
         normalHandle = glGetAttribLocation(shaderProgramID, "vertexNormal");
