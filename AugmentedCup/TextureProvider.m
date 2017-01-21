@@ -7,6 +7,9 @@
 //
 
 #import "TextureProvider.h"
+#import <UIKit/UIKit.h>
+#import "UIView+ToImage.h"
+#import "LabelView.h"
 
 @interface TextureProvider()
 
@@ -21,23 +24,34 @@
 }
 
 - (UIImage *)image {
-    NSDictionary *attributes = @{NSFontAttributeName            : [UIFont systemFontOfSize:50],
-                                 NSForegroundColorAttributeName : [UIColor blueColor],
-                                 NSBackgroundColorAttributeName : [UIColor clearColor]};
     
-    UIImage *image = [self imageFromString:self.string attributes:attributes
+    UIImage *image = [self imageFromString:self.string
                                       size:CGSizeMake(128., 128.)];
     return image;
 }
 
-- (UIImage *)imageFromString:(NSString *)string attributes:(NSDictionary *)attributes size:(CGSize)size
-{
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-    [string drawInRect:CGRectMake(0, 0, size.width, size.height) withAttributes:attributes];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+- (UIImage *)imageFromString:(NSString *)string
+                        size:(CGSize)size {
     
-    return image;
+    UINib *nib = [UINib nibWithNibName:@"LabelView" bundle:nil];
+    LabelView *view = (LabelView *)[[nib instantiateWithOwner:nil options:nil] lastObject];
+    view.label.text = string;
+    view.frame = CGRectMake(0, 0, size.width, size.height);
+    [view layoutIfNeeded];
+    UIImage *image = [view grabImage];
+    
+    UIImage *flippedImage = [self flipImage:image];
+    
+    return flippedImage;
+}
+
+- (UIImage *)flipImage:(UIImage *)image
+{
+    UIGraphicsBeginImageContext(image.size);
+    CGContextDrawImage(UIGraphicsGetCurrentContext(),CGRectMake(0.,0., image.size.width, image.size.height),image.CGImage);
+    UIImage *i = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return i;
 }
 
 @end
