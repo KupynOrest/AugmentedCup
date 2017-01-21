@@ -51,19 +51,21 @@ namespace {
     // Texture filenames
     const char* textureFilenames[kNumAugmentationTextures] = {
         "TextureTransparent.png",
+        "texture.png",
         "TextureSoccerBall.png"
     };
     
     enum tagAugmentationTextureIndex {
         CYLINDER_TEXTURE_INDEX,
+        LOGO_TEXTURE_INDEX,
         BALL_TEXTURE_INDEX
     };
     
     // --- Cylinder ---
     // Dimensions of the cylinder (as set in the TMS tool)
     const float kCylinderHeight = 0.095f;
-    const float kCylinderTopDiameter = 0.058f;
-    const float kCylinderBottomDiameter = 0.058f;
+    const float kCylinderTopDiameter = 0.1316f;
+    const float kCylinderBottomDiameter = 0.1316f;
     
     // Ratio between top and bottom diameter, used to generate the cylinder
     // model
@@ -152,6 +154,7 @@ namespace {
         
         // Instantiate the cylinder model
         cylinderModel = new CylinderModel(kCylinderTopRadiusRatio);
+        logoModel = new LogoModel(kCylinderTopRadiusRatio);
         offTargetTrackingEnabled = NO;
         
         [self initShaders];
@@ -290,6 +293,33 @@ namespace {
         
         glDrawElements(GL_TRIANGLES, cylinderModel->nbIndices(), GL_UNSIGNED_SHORT, (const GLvoid*)cylinderModel->ptrIndices());
         // --- End of cylinder augmentation ---
+        
+        modelViewMatrix = Vuforia::Tool::convertPose2GLMatrix(result->getPose());
+        
+        // Scale the model, then apply the projection matrix
+        
+        SampleApplicationUtils::scalePoseMatrix(kCylinderScaleX * 1.02, kCylinderScaleY, kCylinderScaleZ, &modelViewMatrix.data[0]);
+        SampleApplicationUtils::multiplyMatrix(&projectionMatrix.data[0], &modelViewMatrix.data[0], &modelViewProjection.data[0]);
+        
+        
+        
+        glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)logoModel->ptrVertices());
+        glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)logoModel->ptrNormals());
+        glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)logoModel->ptrTexCoords());
+        
+        // Set the active texture unit
+        //glActiveTexture(GL_TEXTURE0);
+        //glUniform1i(texSampler2DHandle, 0);
+        
+        // Bind the texture and draw the geometry
+        
+        glBindTexture(GL_TEXTURE_2D, [augmentationTexture[LOGO_TEXTURE_INDEX] textureID]);
+        
+        
+        glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE, (const GLfloat*)&modelViewProjection.data[0] );
+        
+        glDrawElements(GL_TRIANGLES, logoModel->nbIndices(), GL_UNSIGNED_SHORT, (const GLvoid*)logoModel->ptrIndices());
+        
         
         // Calculate the position of the ball at the current time
         // --- Soccer ball augmentation ---

@@ -14,10 +14,11 @@ countries.
 #import "Texture.h"
 #import "SampleApplicationSession.h"
 #import "CylinderModel.h"
+#import "LogoModel.h"
 #import "SampleGLResourceHandler.h"
 #import "SampleAppRenderer.h"
 
-static const int kNumAugmentationTextures = 2;
+static const int kNumAugmentationTextures = 3;
 
 
 // CylinderTargets is a subclass of UIView and conforms to the informal protocol
@@ -46,6 +47,7 @@ static const int kNumAugmentationTextures = 2;
 
     // Cylinder model
     CylinderModel* cylinderModel;
+    LogoModel *logoModel;
 
     BOOL offTargetTrackingEnabled;
 

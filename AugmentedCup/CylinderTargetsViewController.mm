@@ -232,7 +232,7 @@ countries.
 
 // load the data associated to the trackers
 - (bool) doLoadTrackersData {
-    return [self loadAndActivateDataSet:@"cola.xml"];;
+    return [self loadAndActivateDataSet:@"water.xml"];;
 }
 
 // start the application trackers

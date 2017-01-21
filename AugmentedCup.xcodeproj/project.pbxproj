@@ -14,8 +14,6 @@
 		057E5D061E326A73008FCC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057E5D041E326A73008FCC25 /* LaunchScreen.storyboard */; };
 		057E5D4B1E326C02008FCC25 /* cola.dat in Resources */ = {isa = PBXBuildFile; fileRef = 057E5D3F1E326C02008FCC25 /* cola.dat */; };
 		057E5D4C1E326C02008FCC25 /* cola.xml in Resources */ = {isa = PBXBuildFile; fileRef = 057E5D401E326C02008FCC25 /* cola.xml */; };
-		057E5D4D1E326C02008FCC25 /* CT.png in Resources */ = {isa = PBXBuildFile; fileRef = 057E5D411E326C02008FCC25 /* CT.png */; };
-		057E5D4E1E326C02008FCC25 /* CT_about.html in Resources */ = {isa = PBXBuildFile; fileRef = 057E5D421E326C02008FCC25 /* CT_about.html */; };
 		057E5D4F1E326C02008FCC25 /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 057E5D431E326C02008FCC25 /* mario.png */; };
 		057E5D501E326C02008FCC25 /* sodacan.dat in Resources */ = {isa = PBXBuildFile; fileRef = 057E5D441E326C02008FCC25 /* sodacan.dat */; };
 		057E5D511E326C02008FCC25 /* sodacan.xml in Resources */ = {isa = PBXBuildFile; fileRef = 057E5D451E326C02008FCC25 /* sodacan.xml */; };
@@ -52,6 +50,10 @@
 		0594B40E1E3367FF008EA18A /* CylinderModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0594B4081E3367FF008EA18A /* CylinderModel.cpp */; };
 		0594B40F1E3367FF008EA18A /* CylinderTargetsEAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0594B40B1E3367FF008EA18A /* CylinderTargetsEAGLView.mm */; };
 		0594B4101E3367FF008EA18A /* CylinderTargetsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0594B40D1E3367FF008EA18A /* CylinderTargetsViewController.mm */; };
+		0594B4131E336905008EA18A /* water.dat in Resources */ = {isa = PBXBuildFile; fileRef = 0594B4111E336905008EA18A /* water.dat */; };
+		0594B4141E336905008EA18A /* water.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0594B4121E336905008EA18A /* water.xml */; };
+		0594B4171E336A32008EA18A /* LogoModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0594B4151E336A32008EA18A /* LogoModel.cpp */; };
+		0594B4191E3370F9008EA18A /* water.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0594B4181E3370F9008EA18A /* water.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,8 +67,6 @@
 		057E5D071E326A73008FCC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		057E5D3F1E326C02008FCC25 /* cola.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = cola.dat; sourceTree = "<group>"; };
 		057E5D401E326C02008FCC25 /* cola.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cola.xml; sourceTree = "<group>"; };
-		057E5D411E326C02008FCC25 /* CT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CT.png; sourceTree = "<group>"; };
-		057E5D421E326C02008FCC25 /* CT_about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CT_about.html; sourceTree = "<group>"; };
 		057E5D431E326C02008FCC25 /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
 		057E5D441E326C02008FCC25 /* sodacan.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = sodacan.dat; sourceTree = "<group>"; };
 		057E5D451E326C02008FCC25 /* sodacan.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sodacan.xml; sourceTree = "<group>"; };
@@ -116,6 +116,11 @@
 		0594B40B1E3367FF008EA18A /* CylinderTargetsEAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CylinderTargetsEAGLView.mm; sourceTree = "<group>"; };
 		0594B40C1E3367FF008EA18A /* CylinderTargetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CylinderTargetsViewController.h; sourceTree = "<group>"; };
 		0594B40D1E3367FF008EA18A /* CylinderTargetsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CylinderTargetsViewController.mm; sourceTree = "<group>"; };
+		0594B4111E336905008EA18A /* water.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = water.dat; sourceTree = "<group>"; };
+		0594B4121E336905008EA18A /* water.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = water.xml; sourceTree = "<group>"; };
+		0594B4151E336A32008EA18A /* LogoModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogoModel.cpp; sourceTree = "<group>"; };
+		0594B4161E336A32008EA18A /* LogoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoModel.h; sourceTree = "<group>"; };
+		0594B4181E3370F9008EA18A /* water.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = water.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +177,8 @@
 		057E5CF51E326A73008FCC25 /* AugmentedCup */ = {
 			isa = PBXGroup;
 			children = (
+				0594B4151E336A32008EA18A /* LogoModel.cpp */,
+				0594B4161E336A32008EA18A /* LogoModel.h */,
 				0594B4081E3367FF008EA18A /* CylinderModel.cpp */,
 				0594B4091E3367FF008EA18A /* CylinderModel.h */,
 				0594B40A1E3367FF008EA18A /* CylinderTargetsEAGLView.h */,
@@ -226,10 +233,11 @@
 		057E5D3E1E326C02008FCC25 /* CylinderTargets */ = {
 			isa = PBXGroup;
 			children = (
+				0594B4181E3370F9008EA18A /* water.jpg */,
+				0594B4111E336905008EA18A /* water.dat */,
+				0594B4121E336905008EA18A /* water.xml */,
 				057E5D3F1E326C02008FCC25 /* cola.dat */,
 				057E5D401E326C02008FCC25 /* cola.xml */,
-				057E5D411E326C02008FCC25 /* CT.png */,
-				057E5D421E326C02008FCC25 /* CT_about.html */,
 				057E5D431E326C02008FCC25 /* mario.png */,
 				057E5D441E326C02008FCC25 /* sodacan.dat */,
 				057E5D451E326C02008FCC25 /* sodacan.xml */,
@@ -314,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				057E5D4D1E326C02008FCC25 /* CT.png in Resources */,
 				057E5D551E326C02008FCC25 /* TextureSoccerBall.png in Resources */,
 				057E5D061E326A73008FCC25 /* LaunchScreen.storyboard in Resources */,
 				057E5D511E326C02008FCC25 /* sodacan.xml in Resources */,
@@ -325,13 +332,15 @@
 				057E5D4C1E326C02008FCC25 /* cola.xml in Resources */,
 				057E5D011E326A73008FCC25 /* Main.storyboard in Resources */,
 				0594B4051E3367EA008EA18A /* SimpleWithColor.fragsh in Resources */,
-				057E5D4E1E326C02008FCC25 /* CT_about.html in Resources */,
+				0594B4141E336905008EA18A /* water.xml in Resources */,
 				0594B3FF1E3367EA008EA18A /* Background.fragsh in Resources */,
 				0594B4031E3367EA008EA18A /* Simple.fragsh in Resources */,
 				057E5D501E326C02008FCC25 /* sodacan.dat in Resources */,
 				0594B4041E3367EA008EA18A /* Simple.vertsh in Resources */,
 				0594B4021E3367EA008EA18A /* Line.vertsh in Resources */,
 				057E5D521E326C02008FCC25 /* Test.dat in Resources */,
+				0594B4191E3370F9008EA18A /* water.jpg in Resources */,
+				0594B4131E336905008EA18A /* water.dat in Resources */,
 				057E5D541E326C02008FCC25 /* texture.png in Resources */,
 				0594B4001E3367EA008EA18A /* Background.vertsh in Resources */,
 				057E5D4F1E326C02008FCC25 /* mario.png in Resources */,
@@ -346,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0594B4171E336A32008EA18A /* LogoModel.cpp in Sources */,
 				0594B3FD1E3367EA008EA18A /* SampleApplicationUtils.cpp in Sources */,
 				057E5CFB1E326A73008FCC25 /* AppDelegate.m in Sources */,
 				0594B3FB1E3367EA008EA18A /* SampleApplicationSession.mm in Sources */,
