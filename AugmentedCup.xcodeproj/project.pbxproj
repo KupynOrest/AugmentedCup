@@ -47,6 +47,7 @@
 		0594B4141E336905008EA18A /* water.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0594B4121E336905008EA18A /* water.xml */; };
 		0594B4171E336A32008EA18A /* LogoModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0594B4151E336A32008EA18A /* LogoModel.cpp */; };
 		0594B4191E3370F9008EA18A /* water.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0594B4181E3370F9008EA18A /* water.jpg */; };
+		2B4215251E34080500944BDC /* pokeball.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4215241E34080500944BDC /* pokeball.png */; };
 		2B5840AE1E337B1B00528E24 /* Background.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840A71E337B1A00528E24 /* Background.fragsh */; };
 		2B5840AF1E337B1B00528E24 /* Background.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840A81E337B1A00528E24 /* Background.vertsh */; };
 		2B5840B01E337B1B00528E24 /* Line.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840A91E337B1B00528E24 /* Line.fragsh */; };
@@ -120,6 +121,8 @@
 		0594B4151E336A32008EA18A /* LogoModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogoModel.cpp; sourceTree = "<group>"; };
 		0594B4161E336A32008EA18A /* LogoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoModel.h; sourceTree = "<group>"; };
 		0594B4181E3370F9008EA18A /* water.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = water.jpg; sourceTree = "<group>"; };
+		2B4215241E34080500944BDC /* pokeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeball.png; sourceTree = "<group>"; };
+		2B4215261E340A7600944BDC /* pokeball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pokeball.h; sourceTree = "<group>"; };
 		2B5840A71E337B1A00528E24 /* Background.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Background.fragsh; sourceTree = "<group>"; };
 		2B5840A81E337B1A00528E24 /* Background.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Background.vertsh; sourceTree = "<group>"; };
 		2B5840A91E337B1B00528E24 /* Line.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Line.fragsh; sourceTree = "<group>"; };
@@ -215,6 +218,7 @@
 				0594B3ED1E3367EA008EA18A /* SampleGLResourceHandler.h */,
 				2B5840A61E337B1A00528E24 /* shaders */,
 				0594B3F61E3367EA008EA18A /* SoccerballSphere.h */,
+				2B4215261E340A7600944BDC /* pokeball.h */,
 				0594B3F71E3367EA008EA18A /* Teapot.h */,
 				0594B3F81E3367EA008EA18A /* Texture.h */,
 				0594B3F91E3367EA008EA18A /* Texture.mm */,
@@ -258,6 +262,7 @@
 		057E5D3E1E326C02008FCC25 /* CylinderTargets */ = {
 			isa = PBXGroup;
 			children = (
+				2B4215241E34080500944BDC /* pokeball.png */,
 				2B5840C31E33A4E300528E24 /* lunarrock_s.png */,
 				0594B4181E3370F9008EA18A /* water.jpg */,
 				0594B4111E336905008EA18A /* water.dat */,
@@ -349,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				057E5D551E326C02008FCC25 /* TextureSoccerBall.png in Resources */,
+				2B4215251E34080500944BDC /* pokeball.png in Resources */,
 				057E5D061E326A73008FCC25 /* LaunchScreen.storyboard in Resources */,
 				057E5D511E326C02008FCC25 /* sodacan.xml in Resources */,
 				057E5D031E326A73008FCC25 /* Assets.xcassets in Resources */,

@@ -23,7 +23,8 @@
 #import "Texture.h"
 #import "SampleApplicationUtils.h"
 #import "SampleApplicationShaderUtils.h"
-#import "SoccerballSphere.h"
+//#import "SoccerballSphere.h"
+#import "pokeball.h"
 
 #import "TextureProvider.h"
 
@@ -54,7 +55,7 @@ namespace {
     const char* textureFilenames[kNumAugmentationTextures] = {
         "TextureTransparent.png",
         "texture.png",
-        "lunarrock_s.png"
+        "pokeball.png"
     };
     
     enum tagAugmentationTextureIndex {
@@ -343,16 +344,16 @@ namespace {
         SampleApplicationUtils::multiplyMatrix(&projectionMatrix.data[0], &modelViewMatrix.data[0], &modelViewProjection.data[0]);
         
         // Set the vertex attribute pointers
-        glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)&sphereVerts[0]);
-        glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)&sphereNormals[0]);
-        glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)&sphereTexCoords[0]);
+        glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)&pokeballVerts[0]);
+        glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)&pokeballNormals[0]);
+        glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)&pokeballTexCoords[0]);
         
         // Bind the texture and draw the geometry
         glBindTexture(GL_TEXTURE_2D, [augmentationTexture[BALL_TEXTURE_INDEX] textureID]);
         
         glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE, (const GLfloat*)&modelViewProjection.data[0]);
         
-        glDrawArrays(GL_TRIANGLES, 0, sphereNumVerts);
+        glDrawArrays(GL_TRIANGLES, 0, pokeballNumVerts);
         // --- End of soccer ball augmentation ---
         
         
