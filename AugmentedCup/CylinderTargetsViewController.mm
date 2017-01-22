@@ -63,6 +63,10 @@ countries.
     
     eaglView = [[CylinderTargetsEAGLView alloc] initWithFrame:viewFrame appSession:vapp];
     [self setView:eaglView];
+    UIImageView *overlay = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"overlay"]];
+    overlay.contentMode = UIViewContentModeScaleAspectFill;
+    overlay.frame = CGRectMake(0, 0, 320, 568);
+    [self.view addSubview:overlay];
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.glResourceHandler = eaglView;
     

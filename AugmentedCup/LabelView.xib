@@ -15,14 +15,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-EJ-5oo">
-                    <rect key="frame" x="20" y="31" width="335" height="61"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                    <color key="textColor" red="0.0" green="0.57277343749999998" blue="0.026428712234376209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-EJ-5oo">
+                    <rect key="frame" x="20" y="32.5" width="335" height="58.5"/>
+                    <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="QeC-EJ-5oo" secondAttribute="trailing" constant="20" id="3xT-ib-aMP"/>
                 <constraint firstItem="QeC-EJ-5oo" firstAttribute="centerX" secondItem="mlh-Ck-DbM" secondAttribute="centerX" id="5Ov-5w-cIC"/>

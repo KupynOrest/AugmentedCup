@@ -26,7 +26,7 @@
 - (UIImage *)image {
     
     UIImage *image = [self imageFromString:self.string
-                                      size:CGSizeMake(128., 128.)];
+                                      size:CGSizeMake(512., 128.)];
     return image;
 }
 

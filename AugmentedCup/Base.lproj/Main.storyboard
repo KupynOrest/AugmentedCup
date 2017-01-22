@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--What's in your bottle?-->
         <scene sceneID="vOP-eb-ry2">
             <objects>
                 <tableViewController id="eeS-IR-lAX" customClass="WelcomeTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tNG-Tn-3vt">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="50" sectionFooterHeight="28" id="tNG-Tn-3vt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter cup name here..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="3ra-0o-nUH">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                        <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter cup name here..." textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="3ra-0o-nUH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -28,14 +28,14 @@
                             <tableViewSection id="5nV-1V-im3">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="QeI-aY-OdR" style="IBUITableViewCellStyleDefault" id="bJa-AK-QLH">
-                                        <rect key="frame" x="0.0" y="30" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bJa-AK-QLH" id="IN7-4M-6jA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Go" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QeI-aY-OdR">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Go!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QeI-aY-OdR">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="eeS-IR-lAX" id="Aab-pE-UjU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="s8O-a1-59j"/>
+                    <navigationItem key="navigationItem" title="What's in your bottle?" id="s8O-a1-59j"/>
                     <connections>
                         <outlet property="cupNameTextField" destination="3ra-0o-nUH" id="NPj-hS-VOr"/>
                     </connections>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="123"/>
+            <point key="canvasLocation" x="160.80000000000001" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>

@@ -61,6 +61,7 @@
 		2B5840BF1E338AF300528E24 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840BE1E338AF200528E24 /* LabelView.xib */; };
 		2B5840C21E339A6E00528E24 /* WelcomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5840C11E339A6E00528E24 /* WelcomeTableViewController.m */; };
 		2B5840C41E33A4E300528E24 /* lunarrock_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5840C31E33A4E300528E24 /* lunarrock_s.png */; };
+		2BB23B001E34DDE200121B3C /* paper_tex.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB23AFF1E34DDE200121B3C /* paper_tex.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,7 @@
 		2B5840C01E339A6E00528E24 /* WelcomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeTableViewController.h; sourceTree = "<group>"; };
 		2B5840C11E339A6E00528E24 /* WelcomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeTableViewController.m; sourceTree = "<group>"; };
 		2B5840C31E33A4E300528E24 /* lunarrock_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lunarrock_s.png; sourceTree = "<group>"; };
+		2BB23AFF1E34DDE200121B3C /* paper_tex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper_tex.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 		057E5D3E1E326C02008FCC25 /* CylinderTargets */ = {
 			isa = PBXGroup;
 			children = (
+				2BB23AFF1E34DDE200121B3C /* paper_tex.png */,
 				2B4215241E34080500944BDC /* pokeball.png */,
 				2B5840C31E33A4E300528E24 /* lunarrock_s.png */,
 				0594B4181E3370F9008EA18A /* water.jpg */,
@@ -354,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				057E5D551E326C02008FCC25 /* TextureSoccerBall.png in Resources */,
+				2BB23B001E34DDE200121B3C /* paper_tex.png in Resources */,
 				2B4215251E34080500944BDC /* pokeball.png in Resources */,
 				057E5D061E326A73008FCC25 /* LaunchScreen.storyboard in Resources */,
 				057E5D511E326C02008FCC25 /* sodacan.xml in Resources */,
